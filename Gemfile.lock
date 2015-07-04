@@ -2,6 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.3.8)
+    birch (0.0.8)
     buftok (0.2.0)
     diff-lcs (1.2.5)
     equalizer (0.0.11)
@@ -13,8 +14,10 @@ GEM
     json (1.8.2)
     memoizable (0.4.2)
       thread_safe (~> 0.3, >= 0.3.1)
+    mime-types (1.25.1)
     multipart-post (2.0.0)
     naught (1.0.0)
+    progressbar (0.21.0)
     rspec (3.2.0)
       rspec-core (~> 3.2.0)
       rspec-expectations (~> 3.2.0)
@@ -28,8 +31,16 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.2.0)
     rspec-support (3.2.2)
+    rubyzip (0.9.9)
+    schiphol (1.0.1)
+      progressbar (>= 0.10.0)
+      rubyzip (~> 0.9.9)
     simple_oauth (0.3.1)
     thread_safe (0.3.5)
+    treat (2.1.0)
+      birch
+      schiphol
+      yomu
     twitter (5.14.0)
       addressable (~> 2.3)
       buftok (~> 0.2.0)
@@ -41,10 +52,14 @@ GEM
       memoizable (~> 0.4.0)
       naught (~> 1.0)
       simple_oauth (~> 0.3.0)
+    yomu (0.2.2)
+      json (~> 1.8)
+      mime-types (~> 1.23)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   rspec
+  treat
   twitter
